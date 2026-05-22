@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: pdc-auth-service
+    env: node
+    rootDir: backend/auth-service
+    buildCommand: npm install
+    startCommand: node server.js
+    autoDeploy: true
+
+  - type: web
+    name: pdc-quiz-service
+    env: node
+    rootDir: backend/quiz-service
+    buildCommand: npm install
+    startCommand: node server.js
+    autoDeploy: true
+
+  - type: web
+    name: pdc-result-service
+    env: node
+    rootDir: backend/result-service
+    buildCommand: npm install
+    startCommand: node server.js
+    autoDeploy: true

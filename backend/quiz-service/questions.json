@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "What is the primary difference between Parallel and Distributed Computing?",
+    "options": [
+      "Parallel sharing memory, Distributed having separate memories across nodes",
+      "Parallel uses only CPUs, Distributed uses only cloud GPUs",
+      "Parallel runs sequentially, Distributed runs at different times",
+      "Parallel is only for local users, Distributed is only for global users"
+    ],
+    "answer": 0,
+    "category": "P&DC Concepts",
+    "points": 10
+  },
+  {
+    "id": 2,
+    "question": "What is load balancing used for in a distributed system?",
+    "options": [
+      "To spread requests across multiple servers",
+      "To store passwords inside the browser",
+      "To slow down every network call",
+      "To replace all APIs with one big file"
+    ],
+    "answer": 0,
+    "category": "P&DC Concepts",
+    "points": 10
+  },
+  {
+    "id": 3,
+    "question": "Which mathematical law calculates the theoretical maximum speedup in parallel computing?",
+    "options": [
+      "Newton's Law of Cooling",
+      "Moore's Law",
+      "Amdahl's Law",
+      "CAP Theorem"
+    ],
+    "answer": 2,
+    "category": "P&DC Concepts",
+    "points": 10
+  },
+  {
+    "id": 4,
+    "question": "What do we call small independent services in modern backend design?",
+    "options": [
+      "Microservices",
+      "Single-file classes",
+      "Static folders",
+      "Browser plugins"
+    ],
+    "answer": 0,
+    "category": "P&DC Concepts",
+    "points": 10
+  },
+  {
+    "id": 5,
+    "question": "What does 'MIMD' stand for in Flynn's Classical Taxonomy?",
+    "options": [
+      "Multiple Instruction, Multiple Data",
+      "Macro Instruction, Multi-channel Disk",
+      "Memory Integrated Micro Device",
+      "Mainframe Interface and Metadata Directory"
+    ],
+    "answer": 0,
+    "category": "P&DC Concepts",
+    "points": 10
+  },
+  {
+    "id": 6,
+    "question": "What does a frontend usually send to a backend service?",
+    "options": [
+      "API requests",
+      "Word documents",
+      "Print commands only",
+      "Desktop shortcuts"
+    ],
+    "answer": 0,
+    "category": "P&DC Concepts",
+    "points": 10
+  },
+  {
+    "id": 7,
+    "question": "In distributed computing, what does the CAP Theorem state that a system can guarantee at most?",
+    "options": [
+      "All three: Consistency, Availability, and Partition Tolerance",
+      "Only two of: Consistency, Availability, and Partition Tolerance",
+      "Only one of the three at a time",
+      "None of these, CAP stands for Capacity, Acceleration, and Portability"
+    ],
+    "answer": 1,
+    "category": "P&DC Concepts",
+    "points": 10
+  },
+  {
+    "id": 8,
+    "question": "What is a 'Race Condition' in parallel processing?",
+    "options": [
+      "A situation where the faster CPU takes all processing load",
+      "When two or more threads attempt to modify shared data at the same time",
+      "A hardware racing game running on multi-core clusters",
+      "The duration of a network ping race between distributed clients"
+    ],
+    "answer": 1,
+    "category": "P&DC Concepts",
+    "points": 10
+  },
+  {
+    "id": 9,
+    "question": "Which of the following describes 'Fault Tolerance' in a distributed system?",
+    "options": [
+      "The ability of a system to keep functioning even if some servers crash",
+      "The error rate of calculations during high CPU temperature",
+      "The penalty applied when a student selects the wrong answer",
+      "The maximum capacity of network bandwidth tolerance"
+    ],
+    "answer": 0,
+    "category": "P&DC Concepts",
+    "points": 10
+  },
+  {
+    "id": 10,
+    "question": "Which protocol is commonly used by the browser to call backend APIs?",
+    "options": [
+      "HTTP",
+      "Bluetooth",
+      "FTP only",
+      "SMTP"
+    ],
+    "answer": 0,
+    "category": "P&DC Concepts",
+    "points": 10
+  }
+]

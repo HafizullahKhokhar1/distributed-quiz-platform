@@ -1,0 +1,9 @@
+{
+  "name": "parallel-distributed-quiz-root",
+  "version": "1.0.0",
+  "description": "Root package for a Parallel and Distributed Computing quiz app",
+  "scripts": {
+    "install-all": "npm install && npm install --prefix backend/auth-service && npm install --prefix backend/quiz-service && npm install --prefix backend/result-service && npm install --prefix frontend",
+    "start": "node scripts/start.js"
+  }
+}
