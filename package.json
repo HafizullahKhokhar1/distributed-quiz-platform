@@ -4,6 +4,8 @@
   "description": "Root package for a Parallel and Distributed Computing quiz app",
   "scripts": {
     "install-all": "npm install && npm install --prefix backend/auth-service && npm install --prefix backend/quiz-service && npm install --prefix backend/result-service && npm install --prefix frontend",
-    "start": "node scripts/start.js"
+    "dev": "node scripts/start.js",
+    "build": "npm run build --prefix frontend",
+    "start": "node server.js"
   }
 }

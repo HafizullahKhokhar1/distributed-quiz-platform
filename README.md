@@ -1,62 +1,68 @@
 # Parallel & Distributed Quiz Platform
 
-This is a lightweight quiz app that demonstrates parallel grading and distributed microservices.
+Parallel & Distributed Quiz Platform is a microservices-based quiz application built to demonstrate distributed system concepts, parallel grading, and interactive frontend/backend communication.
 
-## What it does
+## Overview
 
-- Auth service handles login and registration.
-- Quiz service serves the questions.
-- Result service grades answers in parallel and updates the leaderboard.
-- Frontend shows the quiz UI and live service monitor.
+The application is split into three services plus a React frontend:
 
-## Tech stack
+- `auth-service` handles user login and registration.
+- `quiz-service` serves quiz questions and supports generated question sets.
+- `result-service` evaluates submissions in parallel and maintains the leaderboard.
+- The frontend provides the quiz experience, service monitoring, and submission flow.
 
-- Frontend: React + Vite
-- Backend: Node.js + Express
-- Styling: custom CSS
-- Deployment: Render for backend, Vercel for frontend
+## Features
 
-## Run locally
+- Microservice architecture with separate auth, quiz, and result services
+- Parallel grading using `Promise.all`
+- Live service health monitoring and control toggles
+- Category-based quiz generation with difficulty selection
+- Optional OpenTDB question source without API keys
+- Real-time leaderboard updates
+
+## Tech Stack
+
+- Frontend: React, Vite
+- Backend: Node.js, Express
+- Styling: Custom CSS
+- Data: In-memory stores and local JSON fixtures
+
+## Project Structure
+
+```text
+backend/
+	auth-service/
+	quiz-service/
+	result-service/
+frontend/
+	src/
+	public/
+scripts/
+server.js
+```
+
+## Local Development
+
+Install dependencies:
 
 ```powershell
 npm run install-all
-npm run start
 ```
 
-Open:
+Start the app:
 
-- Frontend: http://localhost:5173
-- Auth: http://localhost:5001
-- Quiz: http://localhost:5002
-- Result: http://localhost:5003
-
-## Deploy free
-
-1. Push the repo to GitHub.
-2. Deploy the three backend services on Render.
-3. Deploy the frontend on Vercel.
-4. Set these env vars on Vercel:
-
-```bash
-VITE_AUTH_API_URL=https://your-auth-service.onrender.com
-VITE_QUIZ_API_URL=https://your-quiz-service.onrender.com
-VITE_RESULT_API_URL=https://your-result-service.onrender.com
+```powershell
+npm start
 ```
 
-5. Set this env var on the result service in Render:
+By default, the app is available on the local port configured by the root server.
 
-```bash
-QUIZ_SERVICE_URL=https://your-quiz-service.onrender.com
-```
+## Notes
 
-The `render.yaml` file in this repo can help you deploy the backend services faster on Render.
+- The frontend uses environment-based API configuration for local and production usage.
+- The quiz service can serve static, generated, or OpenTDB-backed question sets.
+- The result service grades submissions against the current quiz session data.
 
-## Project notes
+## License
 
-- The app uses parallel processing in the result service through `Promise.all`.
-- The monitor shows health and control states for all services.
-- The code supports both local and deployed URLs through environment variables.
-
-## Author
-
-Distributed Quiz Platform.
+See the repository license for usage terms.

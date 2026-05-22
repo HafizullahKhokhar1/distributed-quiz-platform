@@ -2,7 +2,12 @@ const trimTrailingSlash = (value) => value.replace(/\/$/, '');
 
 const getBaseUrl = (envKey, fallback) => {
   const value = import.meta.env[envKey];
-  return trimTrailingSlash(value || fallback);
+  if (value) return trimTrailingSlash(value);
+
+  // In production builds without explicit env vars, use same-origin API routes.
+  if (import.meta.env.PROD) return '';
+
+  return trimTrailingSlash(fallback);
 };
 
 export const API = {
