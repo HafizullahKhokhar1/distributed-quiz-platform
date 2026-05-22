@@ -789,7 +789,7 @@ export default function App() {
       
       {/* Footer credits */}
       <footer style={{ marginTop: 'auto', padding: '1.5rem', borderTop: '1px solid var(--border-light)', textAlign: 'center', fontSize: '0.8rem', color: 'var(--clr-text-muted)' }}>
-        <strong>Made by Richa</strong> • Parallel and Distributed Computing final project
+        <strong>Distributed Quiz Platform</strong> • Parallel and Distributed Computing final project
       </footer>
     </div>
   );

@@ -59,4 +59,4 @@ The `render.yaml` file in this repo can help you deploy the backend services fas
 
 ## Author
 
-Made by Richa.
+Distributed Quiz Platform.
